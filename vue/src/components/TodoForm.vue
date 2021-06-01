@@ -60,7 +60,6 @@
         },
         methods: {
             onTodoIndexChange() {
-                window.todos = this.todos
                 if (this.$route.name === 'updateTodo' && !this.todos[this.todoIndex]) {
                     this.$router.push({ name: 'createTodo' })
                     return
